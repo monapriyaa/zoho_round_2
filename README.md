@@ -1,20 +1,11 @@
 # zoho_round_2
-def pattern(str, len):
-     
-   
-    for i in range(0, len):
-     
-        j = len -1 - i
-        for k in range(0, len):
-         
-            if (k == i or k == j):
-                print(str[k],
-                      end = "")
-            else:
-                print(end = " ")
-         
-        print(" ")
- 
-str = input()
-len = len(str)
-pattern(str, len)
+a=input()
+m=len(a)//2
+a=a[m:]+" "+a[:m]
+l=len(a)
+t=" "
+for i in range(1,l,2):
+ for j in range(l-i,1,-2):
+  print(" ",end='')
+  print(" ",end='')
+ print(a[:i])
